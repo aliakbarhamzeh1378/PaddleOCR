@@ -19,6 +19,12 @@ Global:
   use_space_char: true
   distributed: true
   save_res_path: ./output/rec/predicts_ppocrv3_en.txt
+  use_mlflow: True
+
+mlflow:
+  tracking_uri: http://localhost:5001
+  exp_name: paddleocr
+  run_name: OCRv3_rec
 
 
 Optimizer:
