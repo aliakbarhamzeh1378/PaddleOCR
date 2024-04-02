@@ -109,9 +109,9 @@ Train:
         - valid_ratio
   loader:
     shuffle: true
-    batch_size_per_card: 128
+    batch_size_per_card: 32
     drop_last: true
-    num_workers: 4
+    num_workers: 2
 Eval:
   dataset:
     name: SimpleDataSet
@@ -135,5 +135,5 @@ Eval:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 128
-    num_workers: 4
+    batch_size_per_card: 32
+    num_workers: 2
